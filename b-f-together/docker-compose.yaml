@@ -1,0 +1,15 @@
+version: '3.7'
+
+
+services:
+  frontend:
+    image: dogruaziz/frontend
+    hostname: frontend
+    ports:
+      - '4200:80'
+
+  backend:
+    image: dogruaziz/backend-minio
+    hostname: backend
+    ports:
+      - '4000:4000'
