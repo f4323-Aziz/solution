@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:4000/api/upload',
+  apiUrl: 'http://backend:4000/api/upload',
 };
