@@ -1,7 +1,10 @@
-Merhaba.
 
-Bu repoda nginx klasörü altında "docker-compose up" yapıldığında uygulama localhost:8000 üzerinden minio yayını, localhost:80 üzerinden frontend yayını yapmaktadır.
 
-Bir kez docker-compose up komutunun ardından localhost:8000 den minio uygulamasına bağlantı ile BUCKET, ACCESS_KEY_ID, SECRET_ACCESS_KEY alınıp backend klasöründeki .env dosyasında veri girişi yapıldığında ve ***ENDPOINT kısmına localhost yerine http://public-ip:9000 girildiğinde*** frontend üzerinden, localhost:80 den upload özelliği çalışmaktadır. 
+In this repo, when "docker-compose up" is done under the nginx folder, the application broadcasts minio over localhost:8000 and broadcasts frontend over localhost:80.
 
-İyi çalışmalar dilerim.
+Once the docker-compose up command is executed, when BUCKET, ACCESS_KEY_ID, SECRET_ACCESS_KEY are obtained by connecting to the minio application from localhost:8000 and data entry is made in the .env file in the backend folder and when http://public-ip:9000 is entered instead of localhost in ***ENDPOINT***, the upload feature works from localhost:80 via frontend. 
+
+
+
+*** In the docker-compose.yaml file, the services are run with images, and if the images are removed, the docker-compose file can be rebuilt by updating the 
+IP addresses in the env files.
