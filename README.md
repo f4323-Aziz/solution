@@ -14,6 +14,6 @@ The diagram below describes the architecture of the system. The colored boxes re
 
 <br></br>
 <div style="display: flex; align-items: center; justify-content:center; flex-direction: column">
-  <h3>Sistem Mimarisi</h3>
+  <h3>Architecture of the System</h3>
   <img src="architecture.png" alt="Architecture" style="width:431px;"/>
 </div>
